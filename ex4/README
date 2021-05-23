@@ -1,0 +1,53 @@
+Bar Aloni
+
+I discussed the exercise with: or.honovich
+
+======================================================================
+= READMEfor ex4:                                                     =
+======================================================================
+
+
+usage: python3
+hagman.py
+
+import:
+string
+hangman_helper
+
+functions:
+# filter_words_list():
+ search within  a list or words, for the words that can be the word in
+ a pattern given, while excluding the letters the user guessed in word
+  and failed.
+# choose_letter():
+ according to a supplied patters, checks in a list of words that matches the
+ pattern for the most common letter.
+# update_word_pattern():
+ updates the given pattern according to a word that define the pattern, and
+ a supplied letter(that can be or not be in word).
+# run_single_game():
+ according to user input get hint or try to platter words in patter. the game.
+# main():
+ runs the game endless rounds until the user decides to stop the game.
+
+==================
+=  Description:  =
+==================
+The programm let user play "Hangman" againt computer.
+the user can get a hint, replay.
+more about Hangman: https://en.wikipedia.org/wiki/Hangman_(game)
+=============================
+=  List of submitted files: =
+=============================
+
+README 
+This file
+
+hangman.py 
+The file contains the functions mentioned above.
+
+======================
+=  Special Comments  =
+======================
+
+
