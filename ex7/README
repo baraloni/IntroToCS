@@ -1,0 +1,62 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+================================
+=  README for ex7: Recursion   =
+================================
+ex7.py - composed of several recursive methods
+
+==================
+=  Description:  =
+==================
+Contains several functions, that are using recursion. 
+#print_to_n:
+ prints all natural numbers in ascending order, from 1 to n.
+#print_reversed_n:
+ prints all natural numbers in descending order, from n to 1.
+#has_divisor_smaller_than:
+ checks if n has a divisor smaller or equal to i 
+#is_prime:
+ checks if n is prime.(returns true or false) uses has_divisor_smaller_than
+#divisors_helper:
+ divides n in all numbers from n to i (include), and append all complete
+ dividers to the given list, ever changing it.
+#divisors:
+ creates a list of all dividers (between n to 1, including) of n,
+ from smaller to greater. using the helper
+#factorial:
+ Calculates the value of the product of all ints starting from 1 to n.
+#exp_n_x:
+ calculates the exponential sum function of inserted values. using factorial
+#play_hanoi:
+ Solves Hanoi game.
+#print_binary_sequences_with_prefix:
+ prints all sequences in length n of '0','1', when given a string to work on.
+#print_binary_sequences:
+ prints all sequences in length n of '0','1'. using print_binary_sequences_with_prefix
+#print_seq_helper:
+ prints all combination of a seq with n characters, from the
+ characters from char_lst when given a prefix seq
+#print_sequences:
+ prints all combination of a seq with n characters, from the
+ characters from char_lst. using print_seq_helper
+#no_rep_seq_helper:
+ prints all combination of n characters, using the characters from
+ char_list, when every character in seq appears exactly once.
+ when given a blank seq to work on
+#print_no_repetition_sequences:
+ prints all combination of n characters, using the characters from
+ char_list, when every character appears no more then once. uses the helper
+#no_rep_seq_lst_helper:
+ returns a list that contains all combination of n characters,
+ using the characters from char_list, when every character appears
+ no more then once, when given a blank seq to work on
+#no_repetition_sequences_list:
+ prints a list that contains all combination of n characters,
+ using the characters from char_list, when every character appears
+ no more then once. uses the helper: no_rep_seq_lst_helper
+
+======================
+=  Special Comments  =
+======================

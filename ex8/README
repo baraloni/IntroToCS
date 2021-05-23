@@ -1,0 +1,33 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+======================================
+=  README for ex8: battleship game   =
+======================================
+ex7.py - composed of several recursive methods
+
+==================
+=  Description:  =
+==================
+Running a battel ship game against computer.
+the user can place a bomb on board by choosing a coordinate in board bounds.
+the bomb stays on board 3 turns - or until it hits a ship
+(checking wheter the bomb hit the ship is done after this turn ship's movement).
+a ships which one of it's coordinates in hitten - stops sailing.
+a ship is terminated when all of it's coordinates are hitten.
+each turn report to user how many hits and termonations occures this turn.
+the game ends when all ships are termonated.
+
+
+======================
+=  Special Comments  =
+======================
+the program uses:
+1) a Ship class:
+	controls all ship charectaristic & operations( movement, change of diretion, 
+	initialize, update inner status in case of an hit, ... ) 
+2) a Direction Class:
+	a class representing a valid direction for ships in battelship game
+3)s Game Class:
+	conduct the game using ship class methods to control ships 

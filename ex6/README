@@ -1,0 +1,59 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+======================================================================
+= README for ex6: Mosaic                                             =
+======================================================================
+
+
+ex6.py
+mosaic.py
+
+import:
+
+1) sys:
+to use from command-line insert: python3 ex6.py <image_source> <images_dir>
+<output_name> <tile_height> <num_candidates>
+(as explained in main)
+2) from mosaic import *
+3) from copt import deepcopy
+
+==================
+=  Description:  =
+==================
+A program that creats a mosaic of a chosen image, from a stockpile of images
+(=tiles , all same sized). the program takes sections(in tile size) from the
+image, analayzes it, and finds best match from the tiles.(filtering first by
+comparing the distance between average colour of the image and tile, and
+later filters the smaller group by pixel-pixel compare to find best match).
+ 
+(more about mosaic: "https://en.wikipedia.org/wiki/Mosaic").
+
+Methods expeleind briefly:
+# compare_pixel(pixel1, pixel2):
+   determine the 'distance' between 2 given pixel, based on colour values
+# compare(image1, image2):
+   compare colors of 2 images, by pixel comparing
+# get_piece(image, upper_left, size):
+   returns an image: a section of the given image, of the given size,
+   starting at the location : upper_left.
+# set_piece(image, upper_left, piece):
+   replaces the image's section starts at upper_left, in the image named piece
+# average(image):
+   returns the average color of the image's pixels divided by (red, green, blue)
+# preprocess_tiles(tiles):
+   returns a list of the average color values (tuple: (r, g, b)) of the given tiles
+# get_best_tiles(objective, tiles, averages , num_candidates):
+   returns a smaller list of tiles whom average values are closest to the objective's
+# choose_tile(piece, tiles):
+   the tile of the shortest distance to piece
+# make_mosaic(image, tiles, num_candidates):
+   returns  a mosaic of image made from tiles items
+   
+   
+======================
+=  Special Comments  =
+======================
+
+

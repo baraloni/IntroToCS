@@ -1,0 +1,73 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+=============================================
+=  README for ex5: food baskets comparison  =
+=============================================
+ex5.py 
+imports: 
+1) deepcopy (from copy)
+2)ex5_gui.py
+
+==================
+=  Description:  =
+==================
+a program that displays to the screen all store products.
+the programs can load different stores (combinations of products), and display them.
+another functionality which the program presents is the user ability to mark some 
+products by his choice (create a basket) and save it to his computer, and later on 
+load and change it.
+in addition, the program allows the user to compare his basket in several stores 
+(by his choice), and get information such as: the basket price, how many items are 
+missing and what is the cheapest basket from all of the stores he chose to compare.
+
+Functions:
+1) get_attribute(store_db, ItemCode, tag):
+    finds and returns items's marked by ItemCode attribute (tag), in the given store
+2) string_item(item):
+	returns textual representation of an item in a store , in the format of '[ItemCode] (ItemName)'
+3) string_store_items(store_db):
+	returns textual representation of a store, in the format of:
+    string representation of item1
+    string representation of item2
+	...
+4) read_prices_file(filename):
+	returns a tuple: store_id and a store_db, where the first variable is the store name
+    and the second is a dictionary describing the store. 
+5) create_store_db(root):
+	helper to read_prices_file: returns a dict of dicts where the keys are the store's item's 
+	codes, and the values are dictionaries which keys are the item's attributes.
+6) filter_store(store_db, filter_txt):  
+	returns a new dictionary that includes only the items that were filtered by user.
+    I.e. items that text given by the user is part of their ItemName.
+7) create_basket_from_txt(basket_txt): 
+	returns a basket- list of ItemCodes that were included in basket_txt
+8) get_basket_prices(store_db, basket):
+    returns a list of floats (prices). if one of the items is not part of the store, 
+	its price will be None.
+9) sum_basket(price_list):
+	returns a tuple - the sum of the list (when ignoring Nones) and the number of missing 
+	items (Number of Nones)
+10) basket_item_name(stores_db_list, ItemCode): 
+    Find the first store in the list that contains the item and
+    return its string representation (as in string_item())
+    If the item is not available in any of the stores return only [ItemCode]
+11) save_basket(basket, filename):
+	Save the basket into a file. The basket
+    representation in the file will be in the following format:
+    [ItemCode1] 
+    [ItemCode2] 
+    ...
+12) load_basket(filename):
+    Create basket (list of ItemCodes) from the given file.
+13) best_basket(list_of_price_list):
+    returns the cheapest store (index of the cheapest list) given that a
+    missing item has a price of its maximal price in the other stores *1.25
+
+
+======================
+=  Special Comments  =
+======================
+
+

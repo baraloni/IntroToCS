@@ -1,0 +1,43 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+======================================================================
+= README for ex10: WikiNetwork                                       =
+======================================================================
+==================
+=  Description:  =
+==================
+
+ class Article:
+     A class of items of article. each has neighbors- articles it directs to,
+     donors- article that directs to it, rank- by default =1, and a title.
+     a representation of article is a tuple, its title and a list of neighbors.
+     all but its title can change.
+
+ class WikiNetwork:
+     a class of WikiNetwork - receives a list of tuples, and creates
+     Article instances, and connects them. connections - creates neighbors,
+     donors, changes values, order by rank, creates paths and more in ex10.py
+
+======================
+=  Special Comments  =
+======================
+page_rank:
+1) 'United_States'
+2) 'France'
+3)'Europe'
+
+jaccard_index:
+1) "Louis_XIV_of_France": 'William_III_of_England'
+2) "The_Godfather": 'Citizen_Kane'
+3) "The_Lord_of_the_Rings": 'J._R._R._Tolkien'
+4) "​​The_Simpsons": 'Tuvalu'
+
+friends:
+1) 'United_States', 1 = 0.0006158316754587946
+2)'United_States_dollar', 2 = 0.0019163846714277065
+3) 'Microsoft', 3 = 0.005285714583937858
+
+
+

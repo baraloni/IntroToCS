@@ -1,0 +1,82 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+======================================================================
+= README for ex9:                                                    =
+======================================================================
+
+
+usage: python3
+ship.py
+asteroid.py
+torpedo.py
+asteroids_main.py
+
+==================
+=  Description:  =
+==================
+Running an asteroids game against computer.
+The vassels:
+Ship- can rotate, accelarate, fire torpedos(up to 15). has 3 lives.
+torpedos - used by ship. stay up to 200 loops in game.
+asteroids - default amount in game = 3. defaulte size (from 1, 2 ,3 ) = 3.
+can collide with ship ro torpedo.
+
+game_rummer:
+runs the game. opensthe gui and closes it when there are no more lives,
+no more torpedoes, or 'q' was pressed.
+keeps score, lives of ship. split the asteroid when hit by torpedo,
+delets it when its hit when in minimal size, or hit by ship.
+prints informative massages to screen.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README 
+This file
+
+ship.py 
+contains all information about class Ship in game.
+
+asteroid.py 
+contains all information about class Asteroid in game.
+
+torpedo.py 
+contains all information about class torpedo in game.
+
+asteroids_main.py
+runs the program, conduct the game.
+
+======================
+=  Special Comments  =
+======================
+Considirations i made :
+1)splitting the asteroid:
+i creatad one 'baby asteroid' instead of 2 (meaning of splitting...) and
+called the function twice, instead of creating them 2 at the same function.
+This would have cost me less time between the appearance of the two baby
+asteroids, and is more elegant:
+i could have write the formula , and iterate over a list containing [1, -1],
+creating an asteroid at a time, once with -1 as a coefficient of asteroidspeed
+and once with -1, and registering them.
+but i decided to write the  func the way i did because i thought it would take
+less time and less memory.
+
+2) create all asteroids and registr them in __init__:
+i could have create a list of asteroids according to the given asteroid_amnt
+in game runner in a separate function, but then i had to call it first in game
+loop in order to fullfile the condition to exit the game when the asteroid
+list is empty (we won). but without registering the asteroids because it will
+make them appear at start. but without the registeration the exit condition
+will not work... i think that if i had found a way to so i would have
+preffered it, because it is more elegant and organized, but it is conveniante
+to create and register the asteroids in advence.
+
+3) add the attribute size to an asteroid.
+i could have registered it as a global veriable that is comon to all asteroids,
+that is more elegant and prevents a programmer from creating an asteroid in
+invalid size. but i decided to add that attribute because i thought it would
+make it easier to create an asteroid and more understandable, and to add a
+comment about the size.  (i tried to write that code but it wasnt readable)

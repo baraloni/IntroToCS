@@ -1,6 +1,6 @@
 Bar Aloni
 
-I discussed the exercise with: or.honovich
+I discussed the exercise with:None
 
 ======================================================================
 = READMEfor ex4:                                                     =
@@ -8,7 +8,7 @@ I discussed the exercise with: or.honovich
 
 
 usage: python3
-hagman.py
+hangman.py
 
 import:
 string
