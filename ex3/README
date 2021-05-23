@@ -1,0 +1,55 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+================================
+=  README for ex3: Loops  =
+================================
+ex3.py - composed of several methods
+
+==================
+=  Description:  =
+==================
+
+
+======================
+=  Special Comments  =
+======================
+
+1. cyclic('abcd','bcda'):
+	returns False.
+	the method's parameters types are defined to be lists.
+	the method finds the cyclic forms of a list object(presented as lists), 
+	then checks if this form is equivalent to the other supplied list.
+	because i used lst1[index], it worked on string as well, but when the 
+	cyclic form (a list) and the other parameter (a String) were checked for
+	identidy - the resault was Fasle.
+	
+2. histogram(3,[1,2,3,4]):
+	raises an index out of range error.
+	this method counts how many times a number of a certain range (0-n) appears in a list.
+	it does so by counting how many times has a certain number k appears in num_list, and updats 
+	the index k of a list of size n acoordingly.
+	when k=4 the program needs to update the 4'th index of the new list. but because n=3, 
+	the 4'th index does nit exist, and we get an index out of range error.
+
+3. prime_factors(0):
+	returns [].
+	the program goes through all numbers from 2 to n. when detects a factor of n, it adds it 
+	to an empty list, and starts again, but this time: n = n/factor. when n = 0, the range (2,0)
+	is an empty range, therfore the search immediately stops, and the method returns [].
+	
+4. pairs(2,[0,0,1,1,2,2]):
+	returns [0,2].
+	the method goes throw the items in the list and calculates the value of the number k which 
+	will make item + k sum up to n. it also saves the item in a checked items list.
+	if k is in the list ( but not in checked list to avoid duplication)-
+		it will make a couple out of them and put it in the couples list.
+		it will also put k in the checked items list.
+	else-
+		it will move to the next item. (& will check it only if it has not checked before to
+		prevent adding 2 identical couples to the couples list)
+	therfore it will start at the number: 0, calculate k to be 2. because 2 is in the list it 
+	will add it. it will not add (1,1) because k=1 is in the checke dkist and k cant be in checked list.
+	also (2,0) will not be also because we have already addad them to checked list. 
+	the second 0, 1, 2 will not be checke because they are already in checked list.
