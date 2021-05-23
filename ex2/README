@@ -1,0 +1,44 @@
+Bar Aloni
+
+I discussed the exercise with: None
+
+================================
+=  README for ex2: Conditions  =
+================================
+convert_spoon_to_cup.py
+calculate_mathematical_expressions.py
+largest_to_smallest.py
+quadratic_equation.py
+shapes.py
+bmi.py
+
+==================
+=  Description:  =
+==================
+convert_spoon_to_cup.py:
+	a simple method which convert the number of 
+	spoons given as parameters to cups.
+calculate_mathematical_expressions.py:
+	Multiply, divide, subtract or add 2 given numbers,
+	based on a given operator, as parameters or as string 
+	of the form: 'num1, operator, num2'. order matters.
+largest_to_smallest.py:
+	a simple method which returns the maximal and minimal 
+	number out of the 3 numbers given as a tuple: the number
+	on left is the largest and the right one is the smallest.
+quadratic_equation.py:
+	calculates and return or print the solutions of a quadratic 
+	equation which coefficients given as parameters or by user.
+shapes.py:
+	calculates and return the area of a chosen shape:
+	circle, rectangular or trapezoid, based on user input.
+bmi.py:
+	a simple method which calculates one's bmi based 
+	on height and weight values given as parameters. 
+	returns true if the bmi value is in the range, false 
+	otherwise.
+
+======================
+=  Special Comments  =
+======================
+
